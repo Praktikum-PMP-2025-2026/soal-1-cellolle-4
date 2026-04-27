@@ -24,7 +24,7 @@ int main() {
     scanf("%d", data -> arr + n);
     n = n + 1;
   }
-
+  count = n-1;
   printf("COUNT %d", count);
   if ((n-1) % 2 == 0)
   {
@@ -50,8 +50,6 @@ int main() {
             data -> arr[i] = temp;
         }
     }
-
-count = n-1;
 
 printf(" SORTED ");
   for (int i = 0; i < n-1; i++)
