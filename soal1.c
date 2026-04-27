@@ -12,7 +12,7 @@ int main() {
   int sum;
   int count;
   int sorted;
-  int median;
+  float median;
   int n1;
   int n2;
   int min;
@@ -56,7 +56,7 @@ printf("COUNT %d", count);
 printf(" SORTED ");
   for (int i = 0; i < n-1; i++)
     printf("%d ", data -> arr[i]);
-printf("MEDIAN %d ", median);
+printf("MEDIAN %.2f ", median);
   free(data);
   return 0;
 }
