@@ -1,3 +1,13 @@
+/** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
+ *   Modul               : 3 - Structures & Dynamic Arrays
+ *   Hari dan Tanggal    : Senin, 27 April 2026
+ *   Nama (NIM)          : Marcello Menata Pandiangan (13224069)
+ *   Nama File           : prak3_13224069.c
+ *   Deskripsi           : Sensor Badai Dinamis
+ * 
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
