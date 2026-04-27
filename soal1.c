@@ -16,6 +16,8 @@ int main() {
   int n1;
   int n2;
   int min;
+  float nilai1;
+  float nilai2;
   
   contoh *data = (contoh * ) malloc(sizeof(contoh * ) + n * sizeof(int));
   n = 0;
@@ -59,13 +61,17 @@ if ((n-1) % 2 == 0)
   {
     n1 = ((n-1) / 2);
     n2 = ((n-1) /2) - 1;
-    median = (data -> arr[n1] + data -> arr[n2]) / 2;
+    nilai1 = data -> arr[n1];
+    nilai2 = data -> arr[n2];
+
+    median = (nilai1 + nilai2) / 2 ; 
     printf("MEDIAN %.2f ", median);
     
   }
   else {
     n1 = (n-1) / 2;
-    median = data -> arr[n1];
+    nilai1 = data -> arr[n1];
+    median = nilai1;
     printf("MEDIAN %.0f ", median);
   }
 
