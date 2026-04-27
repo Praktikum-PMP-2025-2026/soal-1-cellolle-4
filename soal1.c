@@ -25,7 +25,7 @@ int main() {
     n = n + 1;
   }
 
-  
+  printf("COUNT %d", count);
   if ((n-1) % 2 == 0)
   {
     n1 = ((n-1) / 2);
@@ -52,11 +52,25 @@ int main() {
     }
 
 count = n-1;
-printf("COUNT %d", count);
+
 printf(" SORTED ");
   for (int i = 0; i < n-1; i++)
     printf("%d ", data -> arr[i]);
-printf("MEDIAN %.2f ", median);
+
+if ((n-1) % 2 == 0)
+  {
+    n1 = ((n-1) / 2);
+    n2 = ((n-1) /2) - 1;
+    median = (data -> arr[n1] + data -> arr[n2]) / 2;
+    printf("MEDIAN %.2f ", median);
+    
+  }
+  else {
+    n1 = (n-1) / 2;
+    median = data -> arr[n1];
+    printf("MEDIAN %.0f ", median);
+  }
+
   free(data);
   return 0;
 }
