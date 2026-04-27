@@ -56,7 +56,7 @@ printf("COUNT %d", count);
 printf(" SORTED ");
   for (int i = 0; i < n-1; i++)
     printf("%d ", data -> arr[i]);
-printf(" MEDIAN %d ", median);
+printf("MEDIAN %d ", median);
   free(data);
   return 0;
 }
